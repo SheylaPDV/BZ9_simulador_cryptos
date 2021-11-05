@@ -128,4 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 # apikey
-__init_.py
+__init__.py
+.__init__.py
