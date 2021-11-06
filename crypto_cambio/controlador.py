@@ -10,7 +10,7 @@ class CryptoControlador:
         self.modelo = CryptoModelo()
 
 
-    def vamos_alla(self):
+    def ejecutar(self):
         salir = "n"
         while salir != "n":
             desde, hasta = self.vista.pedir_info_monedas()
