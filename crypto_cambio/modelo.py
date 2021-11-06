@@ -15,14 +15,14 @@ class CryptoModelo():
         self.moneda_origen = ""
         self.moneda_destino = ""
         self.cambio = 0.0
-            pass
+        
 
     def exchange(self):
         cabecera = {
             "X-CoinAPI-Key": apiKey
         }
         url = f"https://rest.coinapi.io/v1/exchangerate/{self.moneda_origen}/{self.moneda_destino}"
-        #url = URL_SIN_PARAMETROS.format(orig=self.moneda_origen, dest=self.moneda_destino)
+        
         result = requests.get(url, headers=cabecera)
 
         if result.status_code == 200:
